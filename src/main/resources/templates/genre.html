@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Genres</title>
+</head>
+<body>
+    <form th:action="@{/genre}" th:method="get">
+        Search: <input type="text" th:name="type"/>
+        <button type="submit">Send</button>
+    </form>
+
+    <h1 th:text="${type}"></h1>
+    <ul>
+        <li th:each="b : ${books}">
+            Title: <span th:text="${b.title}">Title</span><br>
+            Author: <span th:text="${b.author}">Author</span><br>
+            Genre: <span th:text="${b.genre}">Genre</span><br><br>
+        </li>
+    </ul>
+
+    <p th:text="${error}">No books found</p>
+</body>
+</html>
