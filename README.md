@@ -15,7 +15,8 @@ Yrgo. Backend programming Part 2. Assignment 1. Spring Boot & Thymeleaf.
 5. Run the program:
 
 - Linux/mac: ./run.sh
-- Windows: run.bat
+- Windows Powershell: .\run.bat
+- Windows Command Prompt: run.bat
 
 # Test the application
 
